@@ -1,0 +1,4 @@
+LCMs
+Vieta
+monovariants
+backsolving

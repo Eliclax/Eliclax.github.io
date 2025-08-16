@@ -1,3 +1,21 @@
 # _config.yml
 
-title: "Jekyll Actions Demo"
+title: "Mountain of Mathematics"
+author: "Tony Wang"
+email: tw2000x@gmail.com
+wechat_username: Eliclax
+discord_username: tonywang
+discord_server_invite: https://discord.gg/jvTevEbN2X
+
+theme: minima
+
+header_pages:
+  - index.html
+  - courses.html
+  - about.html
+
+collections:
+  courses:
+    output: true
+  classes:
+    output: true

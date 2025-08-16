@@ -1,0 +1,45 @@
+---
+layout: default
+title: Courses
+---
+
+<h1>Courses</h1>
+
+<p><em>For the second half of 2025.  Please click the course names for more information.</em></p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Time</th>
+        <th>Homework</th>
+        <th>Prerequisites</th>
+    </tr>
+    {% for course in site.courses %}
+        <tr>
+            <td><a href="{{ course.url }}"><strong>{{ course.name }} ({{ course.code}})</strong></a></td>
+            <td>{{ course.time }}</td>
+            <td>{{ course.workload }}</td>
+            <td>{{ course.prerequisites }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<p>Every course will run for 20 weeks every week from Tuesday 22 July to Sunday 7 December 2025. In case of a missed lesson due to an emergency, there may be catch-up lessons after 7 December.</p>
+
+<h2>Fees</h2>
+
+<p>The fees for every course will be $60 NZD per class, for a total of $1,200 NZD per course. This is payable to
+<ul>
+    <li>Name: Xutong WANG</li>
+    <li>Account: 12-3066-0008885-50</li>
+</ul>
+Please include your child's full name in the reference.</p>
+
+<h2>Classes</h2>
+
+<p>Each class will have dedicated channels on our Discord Server, and each lesson will be delivered through a dedicated Voice Channel.  Please note that all students will be required to have their video cameras on for the duration of the lesson, unless there are exceptional circumstances.</p>
+
+<p>Students may enroll in a class that has already started, but only at specific entry points.  Please refer to the class-specific pages for a list of entry points.</p>
+
+<h2>Sample Handout: <a href="https://drive.google.com/file/d/1ZBZ1eKiTj_ln_alirsli82DVhY1NAk6h/view?usp=sharing" target="_blank">Try Small Cases</a></h2>
+

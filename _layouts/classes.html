@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<!--
+name: 2025-07-C1
+course: C1
+start: 22 Jul 2025
+end: 7 Dec 2025
+time: Tue 16:15–18:15
+people: 3
+status: Active
+layout: classes
+-->
+{% assign course = site.courses | where: 'code', page.course | first %}
+<p><a href="{{ course.url }}">← Back to {{ course.code }} Course</a></p>
+
+<h1>{{ page.name }} Class</h1>
+
+<ul>
+    <li><strong>Course:</strong> {{ course.name }} ({{ course.code }}) Course</li>
+    <li><strong>Dates:</strong> {{ page.start }} – {{ page.end }}</li>
+    <li><strong>Time:</strong> {{ page.time }}</li>
+    <li><strong>Teacher:</strong> {{ page.teacher }}</li>
+    <li><strong>Students:</strong> {{ page.students }}</li>
+    <li><strong>Status:</strong> {{ page.status }}</li>
+</ul>
+
+{{ content }}
