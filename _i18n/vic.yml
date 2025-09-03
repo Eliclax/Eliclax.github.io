@@ -1,0 +1,23 @@
+courses:
+  C1:
+    time: Tue 14:15–16:15
+    fee: $1,100 AUD
+    prerequisites: AU Y8–9
+  O1:
+    time: Sun 17:30–19:30
+    fee: $1,100 AUD
+    prerequisites: C1 Course
+  O2: 
+    time: TBD
+    fee: $1,100 AUD
+    prerequisites: O1 Course
+
+classes:
+  2025-07-C1:
+    start: 22 Jul 2025
+    end: 2 Dec 2025
+    time: Tue 14:15–16:15
+  2025-07-O1:
+    start: 27 Jul 2025
+    end: 7 Dec 2025
+    time: Sun 17:30–19:30

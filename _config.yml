@@ -1,4 +1,6 @@
 # _config.yml
+plugins:
+  - jekyll-multiple-languages-plugin
 
 title: "Mountain of Mathematics"
 author: "Tony Wang"
@@ -19,3 +21,6 @@ collections:
     output: true
   classes:
     output: true
+
+languages: ['vic', 'nz']
+# default_locale_in_subfolder: true

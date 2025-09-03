@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<p><a href="{{ '/courses.html' | relative_url }}">← Back to Courses</a></p>
+<p><a href="{{ '/courses.html' | prepend: site.baseurl }}">← Back to Courses</a></p>
 
 <h1>{{ page.name }} ({{ page.code }}) Course</h1>
 
 <ul>
     <li><strong>Lessons:</strong> {{ page.lessons }}</li>
-    <li><strong>Fee:</strong> {{ page.fee }}</li>
-    <li><strong>Current Time:</strong> {{ page.time }}</li>
+    <li><strong>Fee:</strong> {{ site.translations[site.lang].courses[page.code].fee }}</li>
+    <li><strong>Current Time:</strong> {{ site.translations[site.lang].courses[page.code].time }}</li>
     <li><strong>Workload:</strong> {{ page.workload }}</li>
 </ul>
 

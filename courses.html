@@ -16,10 +16,10 @@ title: Courses
     </tr>
     {% for course in site.courses %}
         <tr>
-            <td><a href="{{ course.url }}"><strong>{{ course.name }} ({{ course.code}})</strong></a></td>
-            <td>{{ course.time }}</td>
+            <td><a href="{{ course.url | prepend: site.baseurl }}"><strong>{{ course.name }} ({{ course.code}})</strong></a></td>
+            <td>{{ site.translations[site.lang].courses[course.code].time }}</td>
             <td>{{ course.workload }}</td>
-            <td>{{ course.prerequisites }}</td>
+            <td>{{ site.translations[site.lang].courses[course.code].prerequisites }}</td>
         </tr>
     {% endfor %}
 </table>
@@ -28,12 +28,8 @@ title: Courses
 
 <h2>Fees</h2>
 
-<p>The fees for every course will be $60 NZD per class, for a total of $1,200 NZD per course. This is payable to
-<ul>
-    <li>Name: Xutong WANG</li>
-    <li>Account: 12-3066-0008885-50</li>
-</ul>
-Please include your child's full name in the reference.</p>
+{% translate_file fees.html %}
+This can be paid in 2 instalments.  Please include your child's full name in the reference.</p>
 
 <h2>Classes</h2>
 
