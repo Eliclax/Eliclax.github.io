@@ -1,5 +1,7 @@
 ## Classes
 
+*Click on the class to see the week-by-week schedule.*
+
 {% assign filtered_classes = site.classes | where: 'course', page.code %}
 {% if filtered_classes.size > 0 %}
 | Name | Time | Students | Duration (h) | Status |
