@@ -1,0 +1,28 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+
+# Ruby / Bundler
+.bundle/
+vendor/
+*.gem
+
+
+# Logs
+*.log
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Editor files
+.vscode/
+.idea/
+
+
+# Temporary
+*.swp
