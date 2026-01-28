@@ -8,7 +8,8 @@ layout: default
 <ul>
     <li><strong>Lessons:</strong> {{ page.lessons }}</li>
     <li><strong>Fee:</strong> {{ site.translations[site.lang].courses[page.code].fee }}</li>
-    <li><strong>Current Time:</strong> {{ site.translations[site.lang].courses[page.code].time }}</li>
+    <li><strong>Duration:</strong> {{ page.duration }}</li>
+    <li><strong>Current Time(s):</strong> {{ site.translations[site.lang].courses[page.code].time }}</li>
     <li><strong>Workload:</strong> {{ page.workload }}</li>
 </ul>
 

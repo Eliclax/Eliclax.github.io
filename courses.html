@@ -5,7 +5,7 @@ title: Courses
 
 <h1>Courses</h1>
 
-<p><em>For the second half of 2025.  Please click the course names for more information.</em></p>
+<p><em>For 2026.  Please click the course names for more information.</em></p>
 
 <table>
     <tr>
@@ -16,7 +16,7 @@ title: Courses
     </tr>
     {% for course in site.courses %}
         <tr>
-            <td><a href="{{ course.url | prepend: site.baseurl }}"><strong>{{ course.name }} ({{ course.code}})</strong></a></td>
+            <td><a href="{{ course.url | prepend: site.baseurl }}"><strong>{{ course.name }} ({{ course.code }})</strong></a></td>
             <td>{{ site.translations[site.lang].courses[course.code].time }}</td>
             <td>{{ course.workload }}</td>
             <td>{{ site.translations[site.lang].courses[course.code].prerequisites }}</td>
@@ -24,18 +24,20 @@ title: Courses
     {% endfor %}
 </table>
 
-<p>Every course will run for 20 weeks every week from Tuesday 22 July to Sunday 7 December 2025. In case of a missed lesson due to an emergency, there may be catch-up lessons after 7 December.</p>
+<p>Every course will run for 40 weeks every week from 9 February to 28 June, then from 20 July to 6 December. In case of a missed lesson due to an emergency, there may be catch-up lessons after 28 June or 6 December.</p>
 
 <h2>Fees</h2>
 
-{% translate_file fees.html %}
-This can be paid in 2 instalments.  Please include your child's full name in the reference.</p>
+<p>{% translate_file fees.html %}
+All fees should be paid in instalments of 10 lessons.  Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
 
 <h2>Classes</h2>
 
-<p>Each class will have dedicated channels on our Discord Server, and each lesson will be delivered through a dedicated Voice Channel.  Please note that all students will be required to have their video cameras on for the duration of the lesson, unless there are exceptional circumstances.</p>
+<p>Each class will have dedicated channels on our Discord Server, and each lesson will be delivered through a dedicated Voice Channel.  All students will be required to have their video cameras on for the duration of the lesson, unless there are exceptional circumstances.</p>
 
-<p>Students may enroll in a class that has already started, but only at specific entry points.  Please refer to the class-specific pages for a list of entry points.</p>
+<p>In addition to the weekly lessons, I will have two to three office hours each week where students can ask questions, do homework, or get help with the course content.  I will also periodically host live-solving sessions of contests which will be open to all students to watch.</p>
+
+<p>Students may enrol in a class that has already started, but usually only at specific entry points.  Please refer to the class-specific pages for a list of entry points.</p>
 
 <h2>Sample Handout: <a href="https://drive.google.com/file/d/1ZBZ1eKiTj_ln_alirsli82DVhY1NAk6h/view?usp=sharing" target="_blank">Try Small Cases</a></h2>
 

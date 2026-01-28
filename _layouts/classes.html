@@ -3,8 +3,8 @@ layout: default
 ---
 
 <!--
-name: 2025-07-C1
-course: C1
+name: 2025-07-C2
+course: C2
 start: 22 Jul 2025
 end: 7 Dec 2025
 time: Tue 16:15–18:15
@@ -18,8 +18,8 @@ layout: classes
 <h1>{{ page.name }} Class</h1>
 
 <ul>
-    <li><strong>Course:</strong> {{ course.name }} ({{ course.code }}) Course</li>
-    <li><strong>Dates:</strong> {{ site.translations[site.lang].classes[page.name].start }} – {{ site.translations[site.lang].classes[page.name].end }}</li>
+    <li><strong>Course:</strong> {{ course.name }} ({{ course.code }})</li>
+    <li><strong>Dates:</strong> {{ site.translations[site.lang].classes[page.name].start }} &ndash; {{ site.translations[site.lang].classes[page.name].end }}</li>
     <li><strong>Time:</strong> {{ site.translations[site.lang].classes[page.name].time }}</li>
     <li><strong>Teacher:</strong> {{ page.teacher }}</li>
     <li><strong>Students:</strong> {{ page.students }}</li>
