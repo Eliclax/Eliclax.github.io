@@ -23,10 +23,10 @@
                 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
                 {%- endif -%}
             {%- endfor -%}
-            {% assign current_lang = site.lang | default: "vic" %}
+            {% assign current_lang = site.lang | default: "au" %}
             {% if current_lang == "nz" %}
-                {% capture link1 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-                <a class="page-link" href="{{ link1 }}" >VIC</a>
+                {% capture link1 %}{{ site.baseurl_root }}/au{{ page.url }}{% endcapture %}
+                <a class="page-link" href="{{ link1 }}" >AU</a>
             {% else %}
                 {% capture link2 %}{{ site.baseurl_root }}/nz{{ page.url }}{% endcapture %}
                 <a class="page-link" href="{{ link2 }}" >NZ</a>

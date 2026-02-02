@@ -3,6 +3,8 @@ layout: default
 title: Courses
 ---
 
+{% assign t = site.translations[site.lang] %}
+
 <h1>Courses</h1>
 
 <p><em>For 2026.  Please click the course names for more information.</em></p>
@@ -11,15 +13,15 @@ title: Courses
     <tr>
         <th>Name</th>
         <th>Time</th>
-        <th>Homework</th>
+        <th>Fee ({{ t.locale.currency-code }})</th>
         <th>Prerequisites</th>
     </tr>
     {% for course in site.courses %}
         <tr>
             <td><a href="{{ course.url | prepend: site.baseurl }}"><strong>{{ course.name }} ({{ course.code }})</strong></a></td>
-            <td>{{ site.translations[site.lang].courses[course.code].time }}</td>
-            <td>{{ course.workload }}</td>
-            <td>{{ site.translations[site.lang].courses[course.code].prerequisites }}</td>
+            <td>{{ t.courses[course.code].time }}</td>
+            <td>{{ t.courses[course.code].fee }}</td>
+            <td>{{ t.courses[course.code].prerequisites }}</td>
         </tr>
     {% endfor %}
 </table>
@@ -28,14 +30,14 @@ title: Courses
 
 <h2>Fees</h2>
 
-<p>{% translate_file fees.html %}
-All fees should be paid in instalments of 10 lessons.  Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
+<p>The fees listed above are per lesson.  All fees should be paid in instalments of 10 lessons to {% translate_file my-bank-details.html %}
+Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
 
 <h2>Classes</h2>
 
 <p>Each class will have dedicated channels on our Discord Server, and each lesson will be delivered through a dedicated Voice Channel.  All students will be required to have their video cameras on for the duration of the lesson, unless there are exceptional circumstances.</p>
 
-<p>In addition to the weekly lessons, I will have two to three office hours each week where students can ask questions, do homework, or get help with the course content.  I will also periodically host live-solving sessions of contests which will be open to all students to watch.</p>
+<p>In addition to the weekly lessons, I will have two to three office hours each week when students can ask questions, do homework, or get help with the course content.  I will also periodically host live-solving sessions of contests which will be open to all students to watch.</p>
 
 <p>Students may enrol in a class that has already started, but usually only at specific entry points.  Please refer to the class-specific pages for a list of entry points.</p>
 

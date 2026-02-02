@@ -22,5 +22,6 @@ collections:
   classes:
     output: true
 
-languages: ['vic', 'nz']
-# default_locale_in_subfolder: true
+languages: ['au', 'nz']
+# default_lang: 
+default_locale_in_subfolder: true

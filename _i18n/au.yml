@@ -1,23 +1,24 @@
+# This says AU but it's really only valid for VIC, NSW, TAS, and ACT due to timezones
 locale:
-    currency-code: NZD
+    currency-code: AUD
     # currency-symbol: $
 
 courses:
     C1:
         time: TBD
-        fee: $45
-        prerequisites: NZ Y6 Maths
+        fee: $40
+        prerequisites: AU Y5 Maths
     C2:
         time: TBD
-        fee: $60
-        prerequisites: NZ Y9 Maths
+        fee: $55
+        prerequisites: AU Y8 Maths
     O1:
-        time: Tue 19:00–21:00, Sun 19:30–21:30
-        fee: $60
+        time: Tue 17:00–19:00, Sun 17:30–19:30
+        fee: $55
         prerequisites: C2 Course
     O2: 
         time: N/A
-        fee: $60
+        fee: $55
         prerequisites: O1 Course
 
 classes:
@@ -28,12 +29,12 @@ classes:
     2026-O1:
         start: 10 Feb 2026
         end: 1 Dec 2026
-        time: Tue 19:00–21:00
+        time: Tue 17:00–19:00
     2025-07-C2:                 # ENDED
         start: 22 Jul 2025
         end: 2 Dec 2025
-        time: Tue 16:15–18:15
+        time: Tue 14:15–16:15
     2025-07-O1:
         start: 27 Jul 2025
         end: 28 Jun 2026
-        time: Sun 19:30–21:30
+        time: Sun 17:30–19:30
