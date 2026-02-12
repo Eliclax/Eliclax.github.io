@@ -28,18 +28,28 @@ title: Courses
 
 <p>Every course will run for 40 weeks every week from 9 February to 28 June, then from 20 July to 6 December. In case of a missed lesson due to an emergency, there may be catch-up lessons after 28 June or 6 December.</p>
 
-<h2>Fees</h2>
-
-<p>The fees listed above are per lesson.  All fees should be paid in instalments of 10 lessons to {% translate_file my-bank-details.html %}
-Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
-
 <h2>Classes</h2>
 
 <p>Each class will have dedicated channels on our Discord Server, and each lesson will be delivered through a dedicated Voice Channel.  All students will be required to have their video cameras on for the duration of the lesson, unless there are exceptional circumstances.</p>
 
-<p>In addition to the weekly lessons, I will have two to three office hours each week when students can ask questions, do homework, or get help with the course content.  I will also periodically host live-solving sessions of contests which will be open to all students to watch.</p>
+<p>In addition to the weekly lessons, there are <strong>office hours</strong> each week when students can ask me questions, do homework or extra maths, and meet some of the other students in other classes.  Currently, they are held weekly at the following times:
+    <ul>
+        {% for ohour in t.ohours %}
+            <li>{{ ohour }}</li>
+        {% endfor %}
+    </ul>
+</p>
+    
+<p>I will also periodically host <strong>live-solving sessions</strong> of contests which will be open to all students to watch.</p>
 
-<p>Students may enrol in a class that has already started, but usually only at specific entry points.  Please contact me to discuss your enrolment.</p>
+<h2>Enrolment</h2>
+
+<p>Please contact me to discuss your enrolment.  Students may enrol in a class that has already started, but usually only at specific entry points.</p>
+
+<h2>Fees</h2>
+
+<p>The fees listed above are per lesson.  All fees should be paid in instalments of 10 lessons to {% translate_file my-bank-details.html %}
+Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
 
 <h2>Sample Handout: <a href="https://drive.google.com/file/d/1ZBZ1eKiTj_ln_alirsli82DVhY1NAk6h/view?usp=sharing" target="_blank">Try Small Cases</a></h2>
 
