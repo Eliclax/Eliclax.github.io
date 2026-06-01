@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
+
+{% assign t = site.data[site.active_lang] %}
+
 <p><a href="{{ '/courses.html' | prepend: site.baseurl }}">← Back to Courses</a></p>
 
 <h1>{{ page.name }} ({{ page.code }}) Course</h1>
 
 <ul>
     <li><strong>Lessons:</strong> {{ page.lessons }}</li>
-    <li><strong>Fee:</strong> {{ site.translations[site.lang].courses[page.code].fee }}</li>
+    <li><strong>Fee:</strong> {{ t.courses[page.code].fee }}</li>
     <li><strong>Duration:</strong> {{ page.duration }}</li>
-    <li><strong>Current Time(s):</strong> {{ site.translations[site.lang].courses[page.code].time }}</li>
+    <li><strong>Current Time(s):</strong> {{ t.courses[page.code].time }}</li>
     <li><strong>Workload:</strong> {{ page.workload }}</li>
 </ul>
 

@@ -6,7 +6,7 @@
 
 | Name | Time | Students | Duration (h) | Status |
 | --- | --- | --- | --- | --- |
-{% for class in filtered_classes reversed %}{% assign course = site.courses | where: 'code', class.course | first %}| <a href="{{ class.url | prepend: site.baseurl}}"><strong>{{ class.name }}</strong></a> | {{ site.translations[site.lang].classes[class.name].time }} | {{ class.students }} | {{ course.duration }} | {{ class.status }}
+{% for class in filtered_classes reversed %}{% assign course = site.courses | where: 'code', class.course | first %}| <a href="{{ class.url | prepend: site.baseurl}}"><strong>{{ class.name }}</strong></a> | {{ site.data[site.active_lang].classes[class.name].time }} | {{ class.students }} | {{ course.duration }} | {{ class.status }}
 {% endfor %}
 {% else %}
 No classes yet!

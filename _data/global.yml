@@ -1,0 +1,55 @@
+locale:
+    description: Rest of the World
+    flag: 🌍
+    timezone-city: UTC
+    currency-code: USD
+    currency-symbol: $
+
+courses:
+    C1:
+        time: Thu 07:15–08:45
+        fee: $30
+        prerequisites: 11-year-old standard
+    C2:
+        time: Fri 08:00–10:00
+        fee: $40
+        prerequisites: 14-year-old standard
+    O1:
+        time: Tue 07:00–09:00, Sun 07:30–09:30
+        fee: $40
+        prerequisites: C2 Course
+    O2: 
+        time: N/A
+        fee: $40
+        prerequisites: O1 Course
+
+classes:
+    2026-C1:
+        start: 12 Feb 2026
+        end: 3 Dec 2026
+        time: Thu 07:15–08:45
+    2026-C2:
+        start: 15 May 2026
+        end: 12 Feb 2027
+        time: Fri 08:00–10:00
+    2026-O1:
+        start: 10 Feb 2026
+        end: 1 Dec 2026
+        time: Tue 07:00–09:00
+    2025-07-C2:                 # ENDED
+        start: 22 Jul 2025
+        end: 2 Dec 2025
+        time: Tue 04:15–06:15
+    2025-07-O1:
+        start: 27 Jul 2025
+        end: 28 Jun 2026
+        time: Sun 07:30–09:30
+
+ohours:
+    - Sat 02:00–03:00
+
+
+banner: assets/everest.jpg
+
+
+bank-details: '<a href="https://wise.com/pay/me/xutongw?utm_source=request_flow">Xutong Wang on Wise</a>'

@@ -1,7 +1,10 @@
 # This says AU but it's really only valid for VIC, NSW, TAS, and ACT due to timezones
 locale:
+    description: East Australia
+    flag: 🇦🇺
+    timezone-city: Sydney
     currency-code: AUD
-    # currency-symbol: $
+    currency-symbol: $
 
 courses:
     C1:
@@ -48,3 +51,6 @@ ohours:
 
 
 banner: assets/kosciuszko.jpg
+
+
+bank-details: "<ul> <li>Name: Xutong WANG</li> <li>BSB: 013132</li> <li>Number: 164130581</li> </ul>"

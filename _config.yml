@@ -1,6 +1,6 @@
 # _config.yml
 plugins:
-  - jekyll-multiple-languages-plugin
+  - jekyll-polyglot
 
 title: "Mountain of Mathematics"
 author: "Tony Wang"
@@ -22,6 +22,10 @@ collections:
   classes:
     output: true
 
-languages: ['au', 'nz']
-default_locale_in_subfolder: true
+languages: ['global', 'au', 'nz']
+default_lang: 'global'
+# default_locale_in_subfolder: true
+# lang_from_path: true
+parallel_localization: true
 exclude_from_localizations: ['404.html']
+url: https://moma.eliclax.com

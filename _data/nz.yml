@@ -1,6 +1,9 @@
 locale:
+    description: New Zealand
+    flag: 🇳🇿
+    timezone-city: Auckland
     currency-code: NZD
-    # currency-symbol: $
+    currency-symbol: $
 
 courses:
     C1:
@@ -47,3 +50,6 @@ ohours:
 
 
 banner: assets/aoraki.jpg
+
+
+bank-details: "<ul> <li>Name: Xutong WANG</li> <li>Account: 12-3066-0008885-50</li> </ul>"

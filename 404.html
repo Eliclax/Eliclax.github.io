@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: /404.html
+---
+
+<h1> 404 Error</h1>
+
+<p>The requested page was not found.  Go to homepage:</p>
+
+<ul>
+    {% for lang in site.languages %}
+    <li><a href="{{ site.baseurl }}{% if lang != site.default_lang %}/{{ lang }}{% endif %}/">{{ site.data[lang].locale.description }}</a></li>
+    {% endfor %}
+</ul>

@@ -12,6 +12,9 @@ people: 3
 status: Active
 layout: classes
 -->
+
+{% assign t = site.data[site.active_lang] %}
+
 {% assign course = site.courses | where: 'code', page.course | first %}
 <p><a href="{{ course.url | prepend: site.baseurl }}">← Back to {{ course.code }} Course</a></p>
 
@@ -19,8 +22,8 @@ layout: classes
 
 <ul>
     <li><strong>Course:</strong> {{ course.name }} ({{ course.code }})</li>
-    <li><strong>Dates:</strong> {{ site.translations[site.lang].classes[page.name].start }} &ndash; {{ site.translations[site.lang].classes[page.name].end }}</li>
-    <li><strong>Time:</strong> {{ site.translations[site.lang].classes[page.name].time }}</li>
+    <li><strong>Dates:</strong> {{ t.classes[page.name].start }} &ndash; {{ t.classes[page.name].end }}</li>
+    <li><strong>Time:</strong> {{ t.classes[page.name].time }}</li>
     <li><strong>Teacher:</strong> {{ page.teacher }}</li>
     <li><strong>Students:</strong> {{ page.students }}</li>
     <li><strong>Status:</strong> {{ page.status }}</li>

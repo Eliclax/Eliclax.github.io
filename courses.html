@@ -3,7 +3,7 @@ layout: default
 title: Courses
 ---
 
-{% assign t = site.translations[site.lang] %}
+{% assign t = site.data[site.active_lang] %}
 
 <h1>Courses</h1>
 
@@ -12,7 +12,7 @@ title: Courses
 <table>
     <tr>
         <th>Name</th>
-        <th>Time</th>
+        <th>Time ({{ t.locale.timezone-city }})</th>
         <th>Fee ({{ t.locale.currency-code }})</th>
         <th>Prerequisites</th>
     </tr>
@@ -50,6 +50,6 @@ title: Courses
 
 <h2>Fees</h2>
 
-<p>The fees listed above are per lesson.  All fees should be paid in instalments of 10 lessons to {% translate_file my-bank-details.html %}
+<p>The fees listed above are per lesson.  All fees should be paid in instalments of 10 lessons to {{ t.bank-details }}
 Please include your child's full name in the reference.  Full refunds can be issued for all remaining lessons if students withdraw from the course.</p>
 

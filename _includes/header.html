@@ -23,15 +23,17 @@
                 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
                 {%- endif -%}
             {%- endfor -%}
-            {% assign current_lang = site.lang | default: "au" %}
-            {% if current_lang == "nz" %}
-                {% capture link1 %}{{ site.baseurl_root }}/au{{ page.url }}{% endcapture %}
-                <a class="page-link" href="{{ link1 }}" >AU</a>
-            {% else %}
-                {% capture link2 %}{{ site.baseurl_root }}/nz{{ page.url }}{% endcapture %}
-                <a class="page-link" href="{{ link2 }}" >NZ</a>
-            {% endif %}
-            </div>
+            <select onchange="location = this.value;">
+                {% for lang in site.languages %}
+                    <option
+                    title="{{ site.data[lang].locale.description }}"
+                    value="{{ site.baseurl }}{% if lang != site.default_lang %}/{{ lang }}{% endif %}{{ page.url }}"
+                    {% if lang == site.active_lang %}selected{% endif %}
+                    >
+                    <p>{{ site.data[lang].locale.flag }} {{ lang }}</p>
+                    </option>
+                {% endfor %}
+            </select>
 
             <div class="trigger">
             </div>
