@@ -23,5 +23,5 @@ collections:
     output: true
 
 languages: ['au', 'nz']
-# default_lang: 
 default_locale_in_subfolder: true
+exclude_from_localizations: ["404.html"]
