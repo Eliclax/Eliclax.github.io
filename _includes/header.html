@@ -3,7 +3,7 @@
     <div class="wrapper">
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
-        <a class="site-title" rel="author" href="{{ "/" | prepend: site.baseurl}}">{{ site.title | escape }}</a>
+        <a class="site-title" rel="author" href="{{ "/" | prepend: site.baseurl}}"><img src="/assets/dark-tiny-logo.png" style="height: 1.2em; vertical-align: -0.22em; margin-right:0.25em"> {{ site.title | escape }}</a>
 
         {%- if page_paths -%}
         <nav class="site-nav">
