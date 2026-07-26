@@ -12,8 +12,8 @@ discord_server_invite: https://discord.gg/jvTevEbN2X
 theme: minima
 
 header_pages:
-  - index.html
   - courses.html
+  - international.html
   - about.html
 
 collections:
