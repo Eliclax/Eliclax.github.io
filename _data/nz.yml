@@ -11,19 +11,23 @@ courses:
         fee: $45
         prerequisites: NZ Y6 Maths
     C2:
-        time: Fri 20:00–22:00
+        time: Fri 17:00–19:00
         fee: $60
         prerequisites: NZ Y9 Maths
     O1:
-        time: Tue 19:00–21:00, Sun 19:30–21:30
+        time: Tue 19:00–21:00
         fee: $60
         prerequisites: C2 Course
     O2: 
-        time: N/A
+        time: Sun 19:30–21:30
         fee: $60
         prerequisites: O1 Course
 
 classes:
+    2026-08-O2:
+        start: 16 Aug 2026
+        end: 06 Jun 2027
+        time: Sun 19:30–21:30
     2026-C1:
         start: 9 Feb 2026
         end: 6 Dec 2026
@@ -31,7 +35,7 @@ classes:
     2026-C2:
         start: 15 May 2026
         end: 12 Feb 2027
-        time: Fri 20:00–22:00
+        time: Fri 17:00–19:00
     2026-O1:
         start: 10 Feb 2026
         end: 1 Dec 2026
@@ -40,7 +44,7 @@ classes:
         start: 22 Jul 2025
         end: 2 Dec 2025
         time: Tue 16:15–18:15
-    2025-07-O1:
+    2025-07-O1:                 # ENDED
         start: 27 Jul 2025
         end: 28 Jun 2026
         time: Sun 19:30–21:30
