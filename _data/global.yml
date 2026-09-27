@@ -11,7 +11,7 @@ courses:
         fee: $30
         prerequisites: 11-year-old standard
     C2:
-        time: Fri 05:00–07:00
+        time: Wed 05:00–07:00
         fee: $40
         prerequisites: 14-year-old standard
     O1:
@@ -33,9 +33,9 @@ classes:
         end: 3 Dec 2026
         time: Thu 07:15–08:45
     2026-C2:
-        start: 15 May 2026
-        end: 12 Feb 2027
-        time: Fri 05:00–07:00
+        start: 13 May 2026
+        end: 10 Feb 2027
+        time: Wed 05:00–07:00
     2026-O1:
         start: 10 Feb 2026
         end: 1 Dec 2026

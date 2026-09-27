@@ -11,7 +11,7 @@ courses:
         fee: $40
         prerequisites: AU Y5 Maths
     C2:
-        time: Fri 15:00–17:00
+        time: Wed 15:00–17:00
         fee: $55
         prerequisites: AU Y8 Maths
     O1:
@@ -33,9 +33,9 @@ classes:
         end: 3 Dec 2026
         time: Thu 17:15–18:45
     2026-C2:
-        start: 15 May 2026
-        end: 12 Feb 2027
-        time: Fri 15:00–17:00
+        start: 13 May 2026
+        end: 10 Feb 2027
+        time: Wed 15:00–17:00
     2026-O1:
         start: 10 Feb 2026
         end: 1 Dec 2026
